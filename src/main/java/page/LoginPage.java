@@ -11,7 +11,7 @@ public class LoginPage {
 	// 2. A constructor for the driver to be accessed by the main method, for passing data
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-	} // end constructor LoginPage
+	} // end constructor LoginPage()
 
 	// 3. declare the class By, for CSS selector
 	By textbox_loginName = By.cssSelector("body.venture-PH.p-vogayer:nth-child(2) div.lzd-playground:nth-child(4) div.lzd-playground-main div.container div.login form:nth-child(1) div.mod-login div.mod-login-col1 div.mod-input.mod-login-input-loginName.mod-input-loginName:nth-child(1) > input:nth-child(2)");
