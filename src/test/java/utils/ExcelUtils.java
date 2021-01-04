@@ -7,7 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtils {
 
-	private static XSSFWorkbook workbook;
+	private static XSSFWorkbook workbook; 
 	private static XSSFSheet sheet;
 
 	public ExcelUtils(String excelPath, String sheetName) {
