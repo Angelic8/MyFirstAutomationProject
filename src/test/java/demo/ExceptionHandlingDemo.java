@@ -10,12 +10,12 @@ public class ExceptionHandlingDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+				
 	} // end main method
 
 	public static void demo() throws Exception {
 		System.out.println("This is a sample");
-		throw new ArithmeticException("This is invalid");
+		//throw new ArithmeticException("This is invalid");
 		//int i = 1/0;
 		//System.out.println("Completed");		
 	} // end demo method
