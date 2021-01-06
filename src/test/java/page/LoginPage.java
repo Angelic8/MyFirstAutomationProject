@@ -42,7 +42,9 @@ public class LoginPage {
 		try {	
 			wait.until(ExpectedConditions.elementToBeClickable(ads_login)).click();
 		} catch (Exception e) {
-			System.out.println("Ads is not available");
+			System.out.println(e.getMessage());
+			System.out.println(e.getCause());
+			e.printStackTrace();
 		}
 		
 	} // end method clickLoginAdsButton()
@@ -71,5 +73,6 @@ public class LoginPage {
 		element.click();
 		
 	} // end method clickLoginButton
+
 	
 } // end class LoginPage
