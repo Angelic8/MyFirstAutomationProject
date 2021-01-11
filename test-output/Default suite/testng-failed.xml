@@ -6,8 +6,8 @@
       <class name="test.EcommerceTestCases">
         <methods>
           <include name="endTest"/>
+          <include name="cCategoryPageTest"/>
           <include name="setUpTest"/>
-          <include name="homePageSearchButton"/>
         </methods>
       </class> <!-- test.EcommerceTestCases -->
     </classes>

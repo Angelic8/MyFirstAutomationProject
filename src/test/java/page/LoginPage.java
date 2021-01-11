@@ -73,6 +73,5 @@ public class LoginPage {
 		element.click();
 		
 	} // end method clickLoginButton
-
 	
 } // end class LoginPage

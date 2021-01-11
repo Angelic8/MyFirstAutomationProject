@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-06T19:18:29 SGT" name="Default suite" finished-at="2021-01-06T19:19:35 SGT" duration-ms="66052">
+  <suite started-at="2021-01-11T17:31:18 SGT" name="Default suite" finished-at="2021-01-11T17:33:57 SGT" duration-ms="158341">
     <groups>
     </groups>
-    <test started-at="2021-01-06T19:18:29 SGT" name="Default test" finished-at="2021-01-06T19:19:35 SGT" duration-ms="66052">
+    <test started-at="2021-01-11T17:31:18 SGT" name="Default test" finished-at="2021-01-11T17:33:57 SGT" duration-ms="158341">
       <class name="test.EcommerceTestCases">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.EcommerceTestCases@62230c58]" started-at="2021-01-06T19:18:29 SGT" name="setUpTest" finished-at="2021-01-06T19:18:43 SGT" duration-ms="13668" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.EcommerceTestCases@3d1cfad4]" started-at="2021-01-11T17:31:18 SGT" name="setUpTest" finished-at="2021-01-11T17:31:36 SGT" duration-ms="18011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="homePageAds()[pri:0, instance:test.EcommerceTestCases@62230c58]" started-at="2021-01-06T19:18:43 SGT" name="homePageAds" finished-at="2021-01-06T19:18:49 SGT" duration-ms="6411" status="PASS">
+        <test-method signature="aLoginValidCredentialsTest()[pri:0, instance:test.EcommerceTestCases@3d1cfad4]" started-at="2021-01-11T17:31:36 SGT" name="aLoginValidCredentialsTest" finished-at="2021-01-11T17:32:14 SGT" duration-ms="37755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageAds -->
-        <test-method signature="homePageSearchBar()[pri:0, instance:test.EcommerceTestCases@62230c58]" started-at="2021-01-06T19:18:49 SGT" name="homePageSearchBar" finished-at="2021-01-06T19:18:53 SGT" duration-ms="3476" status="PASS">
+        </test-method> <!-- aLoginValidCredentialsTest -->
+        <test-method signature="bHomePageTest()[pri:0, instance:test.EcommerceTestCases@3d1cfad4]" started-at="2021-01-11T17:32:14 SGT" name="bHomePageTest" finished-at="2021-01-11T17:33:13 SGT" duration-ms="58549" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageSearchBar -->
-        <test-method signature="homePageSearchButton()[pri:0, instance:test.EcommerceTestCases@62230c58]" started-at="2021-01-06T19:18:53 SGT" name="homePageSearchButton" finished-at="2021-01-06T19:18:56 SGT" duration-ms="3270" status="PASS">
+        </test-method> <!-- bHomePageTest -->
+        <test-method signature="cCategoryPageTest()[pri:0, instance:test.EcommerceTestCases@3d1cfad4]" started-at="2021-01-11T17:33:13 SGT" name="cCategoryPageTest" finished-at="2021-01-11T17:33:22 SGT" duration-ms="9725" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageSearchButton -->
-        <test-method signature="loginValidCredentialsTest()[pri:0, instance:test.EcommerceTestCases@62230c58]" started-at="2021-01-06T19:18:56 SGT" name="loginValidCredentialsTest" finished-at="2021-01-06T19:19:28 SGT" duration-ms="32425" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginValidCredentialsTest -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:test.EcommerceTestCases@62230c58]" started-at="2021-01-06T19:19:28 SGT" name="endTest" finished-at="2021-01-06T19:19:35 SGT" duration-ms="6722" status="PASS">
+        </test-method> <!-- cCategoryPageTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:test.EcommerceTestCases@3d1cfad4]" started-at="2021-01-11T17:33:22 SGT" name="endTest" finished-at="2021-01-11T17:33:57 SGT" duration-ms="34232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->

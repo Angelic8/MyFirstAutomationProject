@@ -2,25 +2,32 @@ package test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.asserts.*;
 
+import page.CategoryPage;
 import page.HomePage;
 import page.LoginPage;
+//import page.SearchAndSearchResults;
 
 public class EcommerceTestCases {
 
 	// 1. create a private instance variable for the driver
 	private static WebDriver driver = null;
+	
+	// create a private instance variable for pages; data should be inside the test suite
 	private static LoginPage loginPageObj;
 	private static HomePage HomePageObj;
-
+	private static CategoryPage CategoryPageObj;
+	//private static SearchAndSearchResults SearchAndSearchResultsObj;
+	
 	@BeforeTest
 	public void setUpTest() {
 
@@ -43,61 +50,63 @@ public class EcommerceTestCases {
 		// Maximizes the window
 		driver.manage().window().maximize();
 
-		// 5. declare and refer a new object, class LoginPage, and then pass the driver;
-		loginPageObj = new LoginPage(driver); // calls the data from LoginPage
-		HomePageObj = new HomePage(driver); // calls the data from HomePage*/
-
+		// 5. declare and refer a new object to its class, and then pass it to the driver; data is from the pages own driver
+		loginPageObj = new LoginPage(driver);
+		HomePageObj = new HomePage(driver);
+		CategoryPageObj = new CategoryPage(driver);
+		//SearchAndSearchResultsObj = new SearchAndSearchResults(driver);
+		
 		// 6. get the URL of the website
 		driver.get("https://shopee.ph/");
-	} // end method or function setup()
+		
+	} // end method setup()
 
 	@Test
-	public static void loginValidCredentialsTest() throws InterruptedException {
+	public static void aLoginValidCredentialsTest() throws InterruptedException {
 
 		// 7. refer the method from loginPageObj
+		Thread.sleep(2000);
 		loginPageObj.clickLoginAdsButton();
+		Thread.sleep(2000);
 		loginPageObj.clickLoginLink();
 		loginPageObj.setTextInLoginNameBox("gabbieeneko@gmail.com");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		loginPageObj.setTextInLoginPasswordBox("FuRrPasSc0d32021");
-		Thread.sleep(3000);
-		// 8. refer the method from loginPageObj, login button
+		Thread.sleep(2000);
 		loginPageObj.clickLoginButton();
 
-	} // end method or function loginValidCredentialsTest()
+	} // end method loginValidCredentialsTest()
 
 	@Test
-	public static void homePageAds() throws InterruptedException {
+	public static void bHomePageTest() throws InterruptedException {
 
-		Thread.sleep(6000);
+		Thread.sleep(2000);
 		HomePageObj.clickLoginAdsButtonAfter();
-
-	} // end method or function homePageAds()
-
-	@Test
-	public static void homePageSearchBar() throws InterruptedException {
-
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		HomePageObj.inputSearchBar("sunnies face fluffmatte");
-
-	} // end method or function homePageSearchBar()
-
+		Thread.sleep(2000);
+		HomePageObj.clickSearchButton();	
+		HomePageObj.clickShopeeLogo();
+	} // end method bHomePageTest()
+	
 	@Test
-	public static void homePageSearchButton() throws InterruptedException {
-
-		Thread.sleep(3000);
-		HomePageObj.clickSearchButton();
+	public static void cCategoryPageTest() throws InterruptedException {
 		
-	} // end method or function homePageSearchButton()
-
+		Thread.sleep(2000);
+		CategoryPageObj.clickLogoSM();
+		CategoryPageObj.clickSeeAllSMLink();
+		
+	} // end method cCategoryPageTest()
+	
+	
 	@AfterTest
 	public static void endTest() throws InterruptedException {
 
-		// 9. call the temporary sleep for (5) seconds, close, and then quit the website
+		// 8. call the temporary sleep for (5) seconds, close, and then quit the website
 		Thread.sleep(5000);
 		driver.close();
 		driver.quit();
 
-	} // end method or function endTest()
+	} // end method endTest()
 
 } // end class EcommerceTestCases
