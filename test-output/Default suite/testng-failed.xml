@@ -5,7 +5,9 @@
     <classes>
       <class name="test.EcommerceTestCases">
         <methods>
+          <include name="bHomePageTest"/>
           <include name="endTest"/>
+          <include name="setUp"/>
           <include name="cCategoryPageTest"/>
           <include name="setUpTest"/>
         </methods>
