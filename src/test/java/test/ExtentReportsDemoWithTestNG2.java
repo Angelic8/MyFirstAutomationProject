@@ -62,7 +62,7 @@ public class ExtentReportsDemoWithTestNG2 {
 		loginPageObj.clickLoginLink();
 		test.pass("Login link is clicked");
 		
-		loginPageObj.setTextInLoginNameBox("gabbieeneko@gmail.com");
+		loginPageObj.setTextInLoginNameBox("");
 		test.pass("Entered the username");
 		
 		try {
@@ -71,7 +71,7 @@ public class ExtentReportsDemoWithTestNG2 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		loginPageObj.setTextInLoginPasswordBox("FuRrPasSc0d32021");
+		loginPageObj.setTextInLoginPasswordBox("");
 		test.pass("Entered the password");
 		
 		try {
@@ -104,7 +104,7 @@ public class ExtentReportsDemoWithTestNG2 {
 		loginPageObj.clickLoginLink();
 		test.pass("Login link is clicked");
 		
-		loginPageObj.setTextInLoginNameBox("gabbieeneko@gmail.com");
+		loginPageObj.setTextInLoginNameBox("");
 		test.pass("Entered the username");
 		
 		try {
