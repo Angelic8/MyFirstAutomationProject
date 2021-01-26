@@ -27,7 +27,7 @@ public class CategoryPage {
 	
 		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("window.scrollBy(0,1000)", "");
+		jse.executeScript("window.scrollBy(0,2000)", "");
 		
 		driver.findElement(logo_shopeeMall);
 		
