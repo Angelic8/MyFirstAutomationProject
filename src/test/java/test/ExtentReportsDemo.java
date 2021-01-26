@@ -55,11 +55,11 @@ public class ExtentReportsDemo {
 		loginPageObj.clickLoginLink();
 		test.pass("Login link is clicked");
 		
-		loginPageObj.setTextInLoginNameBox("gabbieeneko@gmail.com");
+		loginPageObj.setTextInLoginNameBox("");
 		test.pass("Entered the username");
 		
 		Thread.sleep(3000);
-		loginPageObj.setTextInLoginPasswordBox("FuRrPasSc0d32021");
+		loginPageObj.setTextInLoginPasswordBox("");
 		test.pass("Entered the password");
 		
 		// 8. refer the method from loginPageObj, login button
